@@ -1,0 +1,55 @@
+.menu {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media (min-width: 45.875em) {
+    margin-top: 3.6rem;
+    margin-bottom: 3rem;
+  }
+  &__info {
+    display: flex;
+    gap: 1rem;
+    font-family: "Plus Jakarta Sans";
+    font-variation-settings: "wght" 800;
+    @media (min-width: 45.875em) {
+      gap: 1.2rem;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    @media (min-width: 45.875em) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__number {
+    background-color: var(--blue);
+    color: white;
+    width: 3.2rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+
+  &__button {
+    font-family: "Plus Jakarta Sans";
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--dark-grayish-blue);
+    @media (min-width: 45.875em) {
+      font-size: 1.6rem;
+    }
+  }
+  &__button:hover {
+    cursor: pointer;
+    color: var(--blue);
+  }
+}

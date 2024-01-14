@@ -1,0 +1,136 @@
+.notification {
+  padding: 2rem 1.6rem;
+  width: 100%;
+  background-color: var(--very-light-grayish-blue);
+  margin-bottom: 1.2rem;
+  border-radius: 1.2rem;
+  display: flex;
+  @media (min-width: 45.875em) {
+    padding: 1.8rem 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    @media (min-width: 45.875em) {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+  }
+  &__info {
+    padding-left: 1.6rem;
+    width: 100%;
+    @media (min-width: 45.875em) {
+      padding-left: 2rem;
+    }
+  }
+  &__headline {
+    font-size: 1.4rem;
+    color: var(--dark-grayish-blue);
+    line-height: 1.4;
+    @media (min-width: 45.875em) {
+      font-size: 1.6rem;
+    }
+    .unread {
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      background-color: var(--red);
+      margin-left: 0.5rem;
+    }
+  }
+  &__date {
+    font-size: 1.4rem;
+    color: var(--grayish-blue);
+    @media (min-width: 45.875em) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.notification--read {
+  background-color: white;
+}
+
+.username,
+.postname,
+.groupname {
+  font-variation-settings: "wght" 800;
+}
+.username {
+  margin-right: 0.5rem;
+  color: var(--very-dark-blue);
+}
+
+.postname {
+  color: var(-dark-grayish-blue);
+  margin-left: 0.5rem;
+}
+
+.groupname {
+  color: var(--blue);
+  margin-left: 0.5rem;
+}
+
+.private-message {
+  font-size: 1.4rem;
+  padding: 2rem 3.2rem 2rem 1.6rem;
+  width: calc(100% - 9rem);
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+  margin-left: auto;
+  margin-right: 1.6rem;
+  border: 1px solid #e5e9ec;
+  color: var(--dark-grayish-blue);
+  margin-top: -1.6rem;
+  @media (min-width: 45.875em) {
+    font-size: 1.6rem;
+    margin-left: auto;
+    width: calc(100% - 10rem);
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 28.75em) {
+  .main .notification:nth-of-type(6) .notification__date {
+    margin-top: -1.2rem;
+  }
+}
+
+@media (min-width: 45.875em) {
+  .main .notification:last-of-type {
+    padding-bottom: 0.8rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrapper img {
+  display: block;
+}
+
+.image-chess {
+  margin-left: auto;
+  width: 4rem;
+  border-radius: 8px;
+}
+
+.username:hover,
+.postname:hover,
+.groupname:hover,
+.private-message:hover,
+.image-chess:hover {
+  cursor: pointer;
+}
+
+.private-message:hover {
+  background-color: #e5eff9;
+  border: 1px solid #e5eff9;
+}
